@@ -1,6 +1,6 @@
 FROM base/archlinux
 
-RUN pacman -Syuq --noconfirm git base-devel sudo
+RUN pacman -Syuq --noconfirm git base-devel sudo namcap
 
 RUN    echo "Defaults        lecture = never" > /etc/sudoers.d/privacy \
     && echo "%wheel ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/wheel \
