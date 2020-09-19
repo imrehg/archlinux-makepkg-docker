@@ -28,6 +28,6 @@ RUN echo "Defaults         lecture = never" > /etc/sudoers.d/privacy \
 USER builder
 WORKDIR /home/builder
 
-COPY --from=base /home/builder/yay/*.pkg.tar.xz /home/builder/pkg/
+COPY --from=base /home/builder/yay/*.pkg.tar.* /home/builder/pkg/
 
-RUN sudo pacman -U --noconfirm /home/builder/pkg/*.pkg.tar.xz
+RUN sudo pacman -U --noconfirm /home/builder/pkg/*.pkg.tar.*
