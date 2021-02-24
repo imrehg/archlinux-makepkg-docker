@@ -1,4 +1,4 @@
-FROM archlinux/base as base
+FROM archlinux/archlinux as base
 
 RUN pacman -Syuq --noconfirm git base-devel sudo
 
@@ -16,7 +16,7 @@ RUN git clone https://aur.archlinux.org/yay.git \
 ######
 # Runtime container
 ######
-FROM archlinux/base
+FROM archlinux/archlinux
 
 RUN pacman -Syuq --noconfirm git base-devel sudo namcap \
  && rm -rf /var/cache/pacman/pkg/*
