@@ -3,6 +3,8 @@
 See more about how this Docker base image is used in this blogpost:
 https://gergely.imreh.net/blog/2018/04/circleci-aur/
 
+The image is is deployed to `imrehg/archlinux-makepg` on [Docker Hub](https://hub.docker.com/repository/docker/imrehg/archlinux-makepkg).
+
 ## License
 
 My own additions (on top of the upstream ArchLinux image) are released under
