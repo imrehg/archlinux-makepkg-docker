@@ -1,5 +1,7 @@
 # ArchLinux package builder base image
 
+[![ci](https://github.com/imrehg/archlinux-makepkg-docker/actions/workflows/docker-build.yaml/badge.svg)](https://github.com/imrehg/archlinux-makepkg-docker/actions/workflows/docker-build.yaml)
+
 See more about how this Docker base image is used in this blogpost:
 https://gergely.imreh.net/blog/2018/04/circleci-aur/
 
