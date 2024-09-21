@@ -1,4 +1,4 @@
-FROM archlinux as base
+FROM archlinux AS base
 
 RUN pacman -Syuq --noconfirm git base-devel sudo
 
