@@ -18,7 +18,7 @@ RUN git clone https://aur.archlinux.org/yay.git \
 ######
 FROM archlinux
 
-RUN pacman -Syuq --noconfirm git base-devel sudo namcap \
+RUN pacman -Syuq --noconfirm git base-devel sudo namcap openssh \
  && rm -rf /var/cache/pacman/pkg/*
 
 RUN echo "Defaults         lecture = never" > /etc/sudoers.d/privacy \
